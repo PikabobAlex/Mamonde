@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Colorlib Templates" />
+    <meta name="author" content="Colorlib" />
+    <meta name="keywords" content="Colorlib Templates" />
+    <!-- Favicons -->
+    <link href="img/Mamonde Logo.png" rel="icon" />
+    <link href="img/Mamonde Logo.png" rel="apple-touch-icon" />
+
+    <!-- Title Page-->
+    <title>Mamonde</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <!--   <script src="https://www.gstatic.com/firebasejs/7.17.1/init.js"></script> -->
+
+    <!-- Icons font CSS-->
+    <link
+      href="vendor/mdi-font/css/material-design-iconic-font.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      href="vendor/font-awesome-4.7/css/font-awesome.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <!-- Font special for pages-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all" />
+    <link
+      href="vendor/datepicker/daterangepicker.css"
+      rel="stylesheet"
+      media="all"
+    />
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+      <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+          <div class="card-body">
+            <h1>You've selected this sample</h1>
+            <img
+              src="img/Marmond-1.png"
+              alt="Mamonde"
+              width="330"
+              height="295"
+              class="center"
+            />
+            <h2 class="title">
+              Register here to collect at your nearest Watson’s Store
+            </h2>
+            <h3 class="title1">(While Stock Last)</h3>
+            <form method="POST">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="label">Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="name"
+                      id="username"
+                      style="border: 0; background-color: rgb(236, 236, 236);"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="label">Mobile</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="phone"
+                      id="contact"
+                      style="border: 0; background-color: rgb(236, 236, 236);"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="label">Email</label>
+                    <input
+                      class="form-control rounded shadow-sm"
+                      type="email"
+                      name="email"
+                      id="email"
+                      style="border: 0; background-color: rgb(236, 236, 236);"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="form-group">
+              <label class="label">Store</label>
+              <div class="rs-select2 js-select-simple select--no-search">
+                <select name="subject">
+                  <option disabled="disabled" selected="selected"
+                    >Choose option</option
+                  >
+                  <option>Pavillion</option>
+                  <option>KLCC</option>
+                  <option>Sunway Pyramid</option>
+                </select>
+                <div class="select-dropdown"></div>
+              </div>
+              <br />
+              <div class="optionpicker custom-checkbox">
+                <label style="font-weight: bold;"
+                  >Select your extra sample</label
+                >
+                <form id="sample">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input custom-control-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label
+                      class="form-check-label custom-control-label"
+                      for="inlineCheckbox1"
+                      >Rose Water Toner Pad</label
+                    >
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input custom-control-input"
+                      type="checkbox"
+                      id="inlineCheckbox2"
+                      value="option2"
+                    />
+                    <label
+                      class="form-check-label custom-control-label"
+                      for="inlineCheckbox2"
+                      >Blue Chamomile Soothing Repair Cream</label
+                    >
+                  </div>
+                </form>
+              </div>
+              <br />
+              <br />
+              <div class="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customCheck1"
+                />
+                <label class="custom-control-label" for="customCheck1">
+                  <a
+                    href="img/Mamonde_Data Collection_Privacy Policy.pdf"
+                    target="_blank"
+                    >Terms & Conditions / Privacy policy.</a
+                  >
+                </label>
+              </div>
+              <br />
+              <a
+                class="btn btn-primary inputButton"
+                href="second.html"
+                role="button"
+                name="submit"
+                id="submit"
+                >SUBMIT</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      console.log("Hello World!");
+
+      firebase.initializeApp({
+        apiKey: "AIzaSyBb71Rka6yHFQLsQFmQQscQPDCmUBf61W8",
+        authDomain: "mamonde-form.firebaseapp.com",
+        projectId: "mamonde-form"
+      });
+
+      var db = firebase.firestore();
+
+      const userName = document.querySelector("#username");
+      const emailAddress = document.querySelector("#email");
+      const contact = document.querySelector("#contact");
+
+      document.getElementById("submit").addEventListener("click", function() {
+        const name = userName.value;
+        const email = emailAddress.value;
+        const contactN = contact.value;
+        console.log("You clicked something!");
+        db.collection("doc")
+          .add({
+            emailAddress: email,
+            userName: name,
+            contactNo: contactN
+          })
+          .then(function() {
+            console.log("Status saved!");
+          })
+          .catch(function(error) {
+            console.log("Got an error: ", error + "!");
+          });
+      });
+    </script>
+  </body>
+</html>
